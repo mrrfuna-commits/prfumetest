@@ -28,7 +28,14 @@
     text-align: center;
     position: relative;
         }
-
+/* Fix image stretching / zoom problem on mobile */
+@media (max-width: 768px) {
+    header {
+        height: 50vh;
+        background-size: contain; /* this stops cropping */
+        background-position: top center;
+	}
+}
         /* Add a subtle dark overlay for readability */
         header::before {
             content: "";
@@ -224,4 +231,5 @@
     </footer>
 </body>
 </html>
+
 
