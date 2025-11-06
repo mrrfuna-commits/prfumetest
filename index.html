@@ -14,20 +14,19 @@
             line-height: 1.6;
         }
 
-        /* HERO SECTION WITH YOUR IMAGE */
+/* HERO SECTION WITH YOUR IMAGE */
         header {
-           background-image: url('5a8d1d58-c4de-4393-a5ec-df3e32eae2d1.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #f5f3f1;
-    text-align: center;
-    position: relative;
+            background: url('5a8d1d58-c4de-4393-a5ec-df3e32eae2d1.jpg') center/cover no-repeat;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #f5f3f1;
+            text-align: center;
+            position: relative;
         }
+
         /* Add a subtle dark overlay for readability */
         header::before {
             content: "";
@@ -35,8 +34,7 @@
             top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(0, 0, 0, 0.55);
             z-index: 1;
-        }
-	
+        }	
 
         header h1, header p, header a {
             position: relative;
@@ -224,6 +222,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
