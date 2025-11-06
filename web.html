@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scentorium | The Art of Fragrance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #fffaf8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* HERO SECTION WITH YOUR IMAGE */
+        header {
+            background: url('5a8d1d58-c4de-4393-a5ec-df3e32eae2d1.jpg') center/cover no-repeat;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #f5f3f1;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Add a subtle dark overlay for readability */
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 1;
+        }
+
+        header h1, header p, header a {
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 1.3rem;
+            margin: 20px 0;
+            color: #ddd;
+        }
+        header a {
+            background: #f8f8f8;
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        header a:hover {
+            background: #000;
+            color: white;
+        }
+
+        section {
+            padding: 20px 10%;
+        }
+        .about, .collection, .testimonials, .contact {
+            text-align: center;
+        }
+        .about h2, .collection h2, .testimonials h2, .contact h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .collection-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .perfume-card {
+            background: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 250px;
+        }
+        .perfume-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .perfume-card h3 {
+            margin: 15px 0 5px;
+        }
+        .perfume-card p {
+            margin-bottom: 15px;
+            color: #777;
+        }
+
+        .testimonials blockquote {
+            font-style: italic;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact button {
+            padding: 12px 25px;
+            background: #000;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1e4de;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Scentorium</h1>
+        <p>The Art of Fragrance</p>
+        <a href="#collection">Explore Collection</a>
+    </header>
+
+    <section class="about" id="about">
+        <h2>Our Essence</h2>
+        <p>Scentorium is a celebration of individuality through scent. Each perfume is crafted with rare ingredients and boundless creativity — capturing emotions, places, and timeless elegance.</p>
+    </section>
+
+<section class="collection" id="collection">
+    <h2>Our Collection</h2>
+
+    <div class="marquee">
+        <div class="marquee-content">
+
+            
+            <img src="2.jpg" alt="Perfume 2">
+            <img src="3.jpg" alt="Perfume 3">
+            <img src="4.jpg" alt="Perfume 4">
+            <img src="5.jpg" alt="Perfume 5">
+            <img src="6.jpg" alt="Perfume 6">
+            <img src="7.jpg" alt="Perfume 7">
+            <img src="8.jpg" alt="Perfume 8">
+            <img src="9.jpg" alt="Perfume 9">
+            <img src="10.jpg" alt="Perfume 10">
+            <img src="11.jpg" alt="Perfume 11">
+
+        </div>
+    </div>
+<style>
+.marquee {
+    width: 180%;
+    Hight: 250%;
+	overflow: hidden;
+    position: relative;
+    margin-top: 40px;
+}
+
+.marquee-content {
+    display: flex;
+    gap: 50px;
+    animation: scroll 18s linear infinite; /* Speed */
+}
+
+.marquee-content img {
+    width: 250px;  /* Change size here */
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Animation */
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+</style>	
+</section>
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <blockquote>"Scentorium perfumes are unlike anything else — sophisticated, long-lasting, and pure luxury."</blockquote>
+        <blockquote>"Every scent tells a story. I’ve never received so many compliments!"</blockquote>
+    </section>
+
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 Scentorium. All Rights Reserved. | Follow us on 
+        <a href="#">Instagram</a> • <a href="#">Facebook</a>
+    </footer>
+</body>
+</html>
